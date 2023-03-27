@@ -1,0 +1,278 @@
+button{
+    position: relative;
+    left: 41%;
+    top: 450px;
+    border-radius: 30% 2%;
+}
+
+body {
+  background-color: rgb(14, 150, 240);
+  overflow: hidden;
+  
+}
+
+/*animação botao*/
+
+.botao_dia{
+  background-color: #2b2d42;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.botao_dia:hover {
+  animation: brilho 6s infinite;
+}
+
+@keyframes brilho {
+  0% {
+    background-color: #2b2d42;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+  25% {
+    background-color: #ffb703;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    background-color: #ffb703;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+    
+  }
+  75% {
+    background-color: #ffb703;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 1);
+  }
+  80% {
+    background-color: #ffb703;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background-color: #2b2d42;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+
+
+
+
+
+
+  /*animação solzinho topo*/
+  #sun {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: fixed;
+    top: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+    animation: pulse 2s infinite;
+    box-shadow: 0px 0px 10px 5px yellow;
+  }
+  
+  #sun::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 50px solid yellow;
+    border-bottom: 20px solid transparent;
+    animation: pulse 2s infinite;
+  }
+  
+  #sun::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 50px solid yellow;
+    border-bottom: 20px solid transparent;
+    animation: pulse 2s infinite;
+  }
+  
+  
+  /*caixinha da frase*/
+  #frase-do-dia {
+    position: absolute;
+    left: -25%;
+    bottom: 0%;
+    width: 2300px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 1px solid #000000;
+    color: rgb(255, 255, 255);
+  }
+/* campinho verde embaixo*/
+.campo {
+  height: 165px;
+  width: 2500px;
+  border: 1px solid black;
+  background-color: green;
+  position: relative;
+ margin: 500px;
+ margin-left: -1%;
+}
+/*casinha*/
+.home{
+  width: 200px;
+  height: 200px;
+  border-radius: 0;
+  background-color: rgb(82, 1, 1);
+  position: absolute;
+ margin-left: 78%;
+bottom: 26%;
+ margin-left: 80%;
+}
+.janela {
+  width: 60px;
+  height:60px;
+  border-radius: 0;
+  background-color: rgb(6, 245, 233);
+  position: absolute;
+  left: 81%;
+  bottom: 42%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.janela2{
+  width: 60px;
+  height:60px;
+  border-radius: 0;
+  background-color: rgb(6, 245, 233);
+  position: absolute;
+  left: 88%;
+  bottom: 42%;
+  border-radius: 50%;
+  z-index: 999;
+
+}
+.door{
+  width: 50px;
+  height: 100px;
+  border-radius: 0;
+  background-color: rgb(168, 4, 4);
+  position: absolute;
+  left: 1300px;
+  bottom: 28%;
+  border-radius: 0%;
+  z-index: 999;
+
+
+}
+.massaneta{
+  width: 10px;
+  height:10px;
+  border-radius: 0;
+  background-color: rgb(10, 10, 10);
+  position: absolute;
+  left: 87%;
+  bottom: 33%;
+  border-radius: 50%;
+  z-index: 9999;
+
+}
+.triangulo{
+  width: 30px;
+  height: 21px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 100px solid rgb(65, 1, 1);
+  position: absolute;
+  left: 1220px;
+  bottom: 52%;
+  border-radius: 0%;
+  z-index: 999;
+}
+.bola1{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 44%;
+  bottom: 76%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola2{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 41%;
+  bottom: 74%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola3{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 47%;
+  bottom: 74%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola4{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 6%;
+  bottom: 76%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola5{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 74%;
+  bottom: 74%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola6{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 71%;
+  bottom: 74%;
+  border-radius: 50%;
+  z-index: 999;
+}
+.bola7{
+  width: 100px;
+  height:100px;
+  border-radius: 0;
+  background-color: rgb(243, 248, 248);
+  position: absolute;
+  left: 8%;
+  bottom: 75%;
+  border-radius: 50%;
+  z-index: 999;
+}
